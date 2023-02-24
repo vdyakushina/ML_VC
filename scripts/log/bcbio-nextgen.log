@@ -1,0 +1,644 @@
+[2022-05-22T10:55Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T10:55Z] Locale set to C.UTF-8.
+[2022-05-22T10:55Z] Timing: organize samples
+[2022-05-22T10:55Z] multiprocessing: organize_samples
+[2022-05-22T10:55Z] Using input YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T10:55Z] Checking sample YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T10:57Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T10:57Z] Locale set to C.UTF-8.
+[2022-05-22T10:57Z] Timing: organize samples
+[2022-05-22T10:57Z] multiprocessing: organize_samples
+[2022-05-22T10:57Z] Using input YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T10:57Z] Checking sample YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T10:57Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T10:57Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T10:57Z] Testing minimum versions of installed programs
+[2022-05-22T10:57Z] Timing: alignment preparation
+[2022-05-22T10:57Z] multiprocessing: prep_align_inputs
+[2022-05-22T10:57Z] multiprocessing: disambiguate_split
+[2022-05-22T10:57Z] Timing: alignment
+[2022-05-22T10:57Z] multiprocessing: process_alignment
+[2022-05-22T10:58Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T10:58Z] Locale set to C.UTF-8.
+[2022-05-22T10:58Z] Timing: organize samples
+[2022-05-22T10:58Z] multiprocessing: organize_samples
+[2022-05-22T10:58Z] Using input YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T10:58Z] Checking sample YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T10:58Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T10:58Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T10:58Z] Testing minimum versions of installed programs
+[2022-05-22T10:58Z] Timing: alignment preparation
+[2022-05-22T10:58Z] multiprocessing: prep_align_inputs
+[2022-05-22T10:58Z] multiprocessing: disambiguate_split
+[2022-05-22T10:58Z] Timing: alignment
+[2022-05-22T10:58Z] multiprocessing: process_alignment
+[2022-05-22T10:58Z] Timing: callable regions
+[2022-05-22T10:58Z] multiprocessing: prep_samples
+[2022-05-22T10:58Z] multiprocessing: postprocess_alignment
+[2022-05-22T10:58Z] Uncaught exception occurred
+Traceback (most recent call last):
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 26, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 106, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+subprocess.CalledProcessError: Command 'set -o pipefail; unset JAVA_HOME && export PATH=/usr/local/share/bcbio/anaconda/bin:"$PATH" && picard -Xms750m -Xmx3500m -XX:+UseSerialGC CollectSequencingArtifactMetrics -REFERENCE_SEQUENCE /usr/local/share/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa -INPUT /pipeline/scripts/bamclean/syn3-normal/syn3-normal-fixrg.bam -OUTPUT /pipeline/scripts/bcbiotx/tmp824qv_7r/syn3-normal/syn3-normal --VALIDATION_STRINGENCY SILENT
+13:58:42.074 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/usr/local/share/bcbio/anaconda/envs/java/share/picard-2.27.1-0/picard.jar!/com/intel/gkl/native/libgkl_compression.so
+[Sun May 22 13:58:42 MSK 2022] CollectSequencingArtifactMetrics --INPUT /pipeline/scripts/bamclean/syn3-normal/syn3-normal-fixrg.bam --OUTPUT /pipeline/scripts/bcbiotx/tmp824qv_7r/syn3-normal/syn3-normal --VALIDATION_STRINGENCY SILENT --REFERENCE_SEQUENCE /usr/local/share/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa --MINIMUM_QUALITY_SCORE 20 --MINIMUM_MAPPING_QUALITY 30 --MINIMUM_INSERT_SIZE 60 --MAXIMUM_INSERT_SIZE 600 --INCLUDE_UNPAIRED false --INCLUDE_DUPLICATES false --INCLUDE_NON_PF_READS false --TANDEM_READS false --USE_OQ true --CONTEXT_SIZE 1 --ASSUME_SORTED true --STOP_AFTER 0 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+[Sun May 22 13:58:42 MSK 2022] Executing as immichail@immichail-server on Linux 5.13.0-40-generic amd64; OpenJDK 64-Bit Server VM 1.8.0_312-b07; Deflater: Intel; Inflater: Intel; Provider GCS is not available; Picard version: Version:2.27.1
+[Sun May 22 13:58:42 MSK 2022] picard.analysis.artifacts.CollectSequencingArtifactMetrics done. Elapsed time: 0.00 minutes.
+Runtime.totalMemory()=760217600
+To get help, see http://broadinstitute.github.io/picard/index.html#GettingHelp
+Exception in thread "main" htsjdk.samtools.util.SequenceUtil$SequenceListsDifferException: Sequence dictionaries are not the same size (25, 93)
+	at htsjdk.samtools.util.SequenceUtil.assertSequenceListsEqual(SequenceUtil.java:259)
+	at htsjdk.samtools.util.SequenceUtil.assertSequenceDictionariesEqual(SequenceUtil.java:342)
+	at htsjdk.samtools.util.SequenceUtil.assertSequenceDictionariesEqual(SequenceUtil.java:328)
+	at picard.analysis.SinglePassSamProgram.makeItSo(SinglePassSamProgram.java:117)
+	at picard.analysis.SinglePassSamProgram.doWork(SinglePassSamProgram.java:94)
+	at picard.cmdline.CommandLineProgram.instanceMain(CommandLineProgram.java:308)
+	at picard.cmdline.PicardCommandLine.instanceMain(PicardCommandLine.java:103)
+	at picard.cmdline.PicardCommandLine.main(PicardCommandLine.java:113)
+' returned non-zero exit status 1.
+[2022-05-22T11:09Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T11:09Z] Locale set to C.UTF-8.
+[2022-05-22T11:09Z] Timing: organize samples
+[2022-05-22T11:09Z] multiprocessing: organize_samples
+[2022-05-22T11:09Z] Using input YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:09Z] Checking sample YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:09Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:09Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:09Z] Testing minimum versions of installed programs
+[2022-05-22T11:09Z] Timing: alignment preparation
+[2022-05-22T11:09Z] multiprocessing: prep_align_inputs
+[2022-05-22T11:09Z] multiprocessing: disambiguate_split
+[2022-05-22T11:09Z] Timing: alignment
+[2022-05-22T11:09Z] multiprocessing: process_alignment
+[2022-05-22T11:10Z] Timing: callable regions
+[2022-05-22T11:10Z] multiprocessing: prep_samples
+[2022-05-22T11:10Z] multiprocessing: postprocess_alignment
+[2022-05-22T11:10Z] syn3-normal: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.6% offtarget coverage
+[2022-05-22T11:11Z] syn3-tumor: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.5% offtarget coverage
+[2022-05-22T11:11Z] multiprocessing: combine_sample_regions
+[2022-05-22T11:11Z] Identified 8 parallel analysis blocks
+Block sizes:
+  min: 22212890
+  5%: 23855718.95
+  25%: 28539669.5
+  median: 36443154.0
+  75%: 51467581.0
+  95%: 99061025.69999999
+  99%: 106291190.74
+  max: 108098732
+Between block sizes:
+  min: 1097
+  5%: 1195.85
+  25%: 1591.25
+  median: 2098.0
+  75%: 3749.75
+  95%: 6893.149999999998
+  99%: 7521.829999999999
+  max: 7679
+
+[2022-05-22T11:11Z] multiprocessing: calculate_sv_bins
+[2022-05-22T11:11Z] multiprocessing: calculate_sv_coverage
+[2022-05-22T11:11Z] multiprocessing: normalize_sv_coverage
+[2022-05-22T11:11Z] Timing: hla typing
+[2022-05-22T11:11Z] Timing: alignment post-processing
+[2022-05-22T11:11Z] multiprocessing: piped_bamprep
+[2022-05-22T11:11Z] Timing: variant calling
+[2022-05-22T11:11Z] multiprocessing: variantcall_sample
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:11Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:12Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:12Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:12Z] multiprocessing: concat_variant_files
+[2022-05-22T11:12Z] Timing: joint squaring off/backfilling
+[2022-05-22T11:12Z] Timing: variant post-processing
+[2022-05-22T11:12Z] multiprocessing: postprocess_variants
+[2022-05-22T11:12Z] Finalizing variant calls: syn3-tumor, mutect2
+[2022-05-22T11:12Z] Calculating variation effects for syn3-tumor, mutect2
+[2022-05-22T11:12Z] Annotate VCF file: syn3-tumor, mutect2
+[2022-05-22T11:12Z] Filtering for syn3-tumor, mutect2
+[2022-05-22T11:12Z] Prioritization for syn3-tumor, mutect2
+[2022-05-22T11:12Z] Finalizing variant calls: syn3-tumor, vardict
+[2022-05-22T11:12Z] Calculating variation effects for syn3-tumor, vardict
+[2022-05-22T11:13Z] Annotate VCF file: syn3-tumor, vardict
+[2022-05-22T11:13Z] Filtering for syn3-tumor, vardict
+[2022-05-22T11:13Z] Prioritization for syn3-tumor, vardict
+[2022-05-22T11:13Z] multiprocessing: split_variants_by_sample
+[2022-05-22T11:13Z] Timing: prepped BAM merging
+[2022-05-22T11:13Z] Timing: validation
+[2022-05-22T11:13Z] multiprocessing: compare_to_rm
+[2022-05-22T11:13Z] Timing: ensemble calling
+[2022-05-22T11:13Z] Timing: validation summary
+[2022-05-22T11:13Z] Timing: structural variation
+[2022-05-22T11:13Z] Timing: structural variation
+[2022-05-22T11:13Z] Timing: structural variation ensemble
+[2022-05-22T11:13Z] Timing: structural variation validation
+[2022-05-22T11:13Z] multiprocessing: validate_sv
+[2022-05-22T11:13Z] Timing: heterogeneity
+[2022-05-22T11:13Z] Timing: population database
+[2022-05-22T11:13Z] multiprocessing: prep_gemini_db
+[2022-05-22T11:13Z] Not running gemini, no samples with variants found: syn3-tumor
+[2022-05-22T11:13Z] Not running gemini, not configured in tools_on: syn3-tumor
+[2022-05-22T11:13Z] Timing: create CNV PON
+[2022-05-22T11:13Z] Timing: peddy check
+[2022-05-22T11:13Z] multiprocessing: run_peddy
+[2022-05-22T11:13Z] Timing: quality control
+[2022-05-22T11:13Z] multiprocessing: pipeline_summary
+[2022-05-22T11:13Z] QC: syn3-tumor contamination
+[2022-05-22T11:13Z] Uncaught exception occurred
+Traceback (most recent call last):
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 26, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 106, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+subprocess.CalledProcessError: Command 'verifybamid2 1000g.phase3 100k b37 --Reference /usr/local/share/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa --Output /pipeline/scripts/bcbiotx/tmp2qcxxlrb/syn3-tumor-verifybamid --NumThread 4 --PileupFile /pipeline/scripts/qc/syn3-tumor/contamination/syn3-tumor-verifybamid-mpileup.txt
+VerifyBamID2: A robust tool for DNA contamination estimation from sequence reads using ancestry-agnostic method.
+ Version:2.0.1
+ Copyright (c) 2009-2020 by Hyun Min Kang and Fan Zhang
+ This project is licensed under the terms of the MIT license.
+The following parameters are available.  Ones with "[]" are in effect:
+Available Options
+                    Input/Output Files : --BamFile [Empty],
+                                         --PileupFile [/pipeline/scripts/qc/syn3-tumor/contamination/syn3-tumor-verifybamid-mpileup.txt],
+                                         --Reference [/usr/local/share/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa],
+                                         --SVDPrefix [/usr/local/share/bcbio/anaconda/envs/htslib1.10/share/verifybamid2-2.0.1-2/resource/1000g.phase3.100k.b37.vcf.gz.dat],
+                                         --Output [/pipeline/scripts/bcbiotx/tmp2qcxxlrb/syn3-tumor-verifybamid]
+               Model Selection Options : --WithinAncestry,
+                                         --DisableSanityCheck, --NumPC [2],
+                                         --FixPC [Empty],
+                                         --FixAlpha [-1.0e+00],
+                                         --KnownAF [Empty], --NumThread [4],
+                                         --Seed [12345], --Epsilon [1.0e-08],
+                                         --OutputPileup, --Verbose
+   Construction of SVD Auxiliary Files : --RefVCF [Empty]
+                        Pileup Options : --min-BQ [13], --min-MQ [2],
+                                         --adjust-MQ [40], --max-depth [8000],
+                                         --no-orphans, --incl-flags [1040],
+                                         --excl-flags [1796]
+                    Deprecated Options : --UDPath [Empty], --MeanPath [Empty],
+                                         --BedPath [Empty]
+Initialize from FullLLKFunc(int dim, ContaminationEstimator* contPtr)
+NOTICE - Number of marker in Reference Matrix:100000
+NOTICE - Number of marker shared with input file:3
+NOTICE - Mean Depth:534.000000
+NOTICE - SD Depth:233.630763
+NOTICE - 3 SNP markers remained after sanity check.
+WARNING - 
+Insufficient Available markers, check input bam depth distribution in output pileup file after specifying --OutputPileup
+' returned non-zero exit status 1.
+[2022-05-22T11:13Z] Skipping VerifyBamID, not enough overlapping markers found: syn3-tumor
+[2022-05-22T11:13Z] QC: syn3-tumor coverage
+[2022-05-22T11:13Z] QC: syn3-tumor fastqc
+[2022-05-22T11:13Z] Produced HTML report /pipeline/scripts/qc/syn3-tumor/fastqc/fastqc_report.html
+[2022-05-22T11:13Z] QC: syn3-tumor peddy
+[2022-05-22T11:13Z] QC: syn3-tumor picard
+[2022-05-22T11:13Z] QC: syn3-tumor qsignature
+[2022-05-22T11:13Z] QC: syn3-tumor samtools
+[2022-05-22T11:13Z] QC: syn3-tumor variants
+[2022-05-22T11:13Z] QC: syn3-tumor viral
+[2022-05-22T11:13Z] Uncaught exception occurred
+Traceback (most recent call last):
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 26, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 106, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+subprocess.CalledProcessError: Command 'set -o pipefail; /usr/local/share/bcbio/anaconda/bin/samtools view -u -f 4 /pipeline/scripts/bamclean/syn3-tumor/syn3-tumor-reorder-fixrgs-gatkfilter.bam | /usr/local/share/bcbio/anaconda/bin/bamtofastq collate=0 | bwa mem -t 4 /usr/local/share/bcbio/genomes/Hsapiens/hg19/viral/gdc-viral.fa - | /usr/local/share/bcbio/anaconda/bin/bamsort tmpfile=/pipeline/scripts/bcbiotx/tmp5i3r4rb6/syn3-tumor-gdc-viral-tmp inputthreads=4 outputthreads=4 inputformat=sam index=1 indexfilename=/pipeline/scripts/bcbiotx/tmp5i3r4rb6/syn3-tumor-gdc-viral-tmpbam.bai O=/pipeline/scripts/bcbiotx/tmp5i3r4rb6/syn3-tumor-gdc-viral-tmpbam.bam &&/usr/local/share/bcbio/anaconda/bin/samtools view -bh /pipeline/scripts/bcbiotx/tmp5i3r4rb6/syn3-tumor-gdc-viral-tmpbam.bam > /pipeline/scripts/bcbiotx/tmp5i3r4rb6/syn3-tumor-gdc-viral.bam && /usr/local/share/bcbio/anaconda/bin/samtools index /pipeline/scripts/bcbiotx/tmp5i3r4rb6/syn3-tumor-gdc-viral.bam
+/usr/local/share/bcbio/anaconda/bin/bamtofastq: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+/usr/local/share/bcbio/anaconda/bin/bamsort: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+[E::bwa_idx_load_from_disk] fail to locate the index files
+' returned non-zero exit status 127.
+[2022-05-22T11:24Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T11:24Z] Locale set to C.UTF-8.
+[2022-05-22T11:24Z] Timing: organize samples
+[2022-05-22T11:24Z] multiprocessing: organize_samples
+[2022-05-22T11:24Z] Using input YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:24Z] Checking sample YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:24Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:24Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:24Z] Testing minimum versions of installed programs
+[2022-05-22T11:24Z] Timing: alignment preparation
+[2022-05-22T11:24Z] multiprocessing: prep_align_inputs
+[2022-05-22T11:24Z] multiprocessing: disambiguate_split
+[2022-05-22T11:24Z] Timing: alignment
+[2022-05-22T11:24Z] multiprocessing: process_alignment
+[2022-05-22T11:24Z] Timing: callable regions
+[2022-05-22T11:24Z] multiprocessing: prep_samples
+[2022-05-22T11:24Z] multiprocessing: postprocess_alignment
+[2022-05-22T11:24Z] syn3-normal: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.6% offtarget coverage
+[2022-05-22T11:24Z] syn3-tumor: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.5% offtarget coverage
+[2022-05-22T11:24Z] multiprocessing: combine_sample_regions
+[2022-05-22T11:24Z] Identified 8 parallel analysis blocks
+Block sizes:
+  min: 22212890
+  5%: 23855718.95
+  25%: 28539669.5
+  median: 36443154.0
+  75%: 51467581.0
+  95%: 99061025.69999999
+  99%: 106291190.74
+  max: 108098732
+Between block sizes:
+  min: 1097
+  5%: 1195.85
+  25%: 1591.25
+  median: 2098.0
+  75%: 3749.75
+  95%: 6893.149999999998
+  99%: 7521.829999999999
+  max: 7679
+
+[2022-05-22T11:24Z] multiprocessing: calculate_sv_bins
+[2022-05-22T11:24Z] multiprocessing: calculate_sv_coverage
+[2022-05-22T11:24Z] multiprocessing: normalize_sv_coverage
+[2022-05-22T11:24Z] Timing: hla typing
+[2022-05-22T11:24Z] Timing: alignment post-processing
+[2022-05-22T11:24Z] multiprocessing: piped_bamprep
+[2022-05-22T11:24Z] Timing: variant calling
+[2022-05-22T11:24Z] multiprocessing: variantcall_sample
+[2022-05-22T11:24Z] multiprocessing: concat_variant_files
+[2022-05-22T11:24Z] Timing: joint squaring off/backfilling
+[2022-05-22T11:24Z] Timing: variant post-processing
+[2022-05-22T11:24Z] multiprocessing: postprocess_variants
+[2022-05-22T11:24Z] Finalizing variant calls: syn3-tumor, mutect2
+[2022-05-22T11:24Z] Calculating variation effects for syn3-tumor, mutect2
+[2022-05-22T11:24Z] Annotate VCF file: syn3-tumor, mutect2
+[2022-05-22T11:24Z] Filtering for syn3-tumor, mutect2
+[2022-05-22T11:24Z] Prioritization for syn3-tumor, mutect2
+[2022-05-22T11:24Z] Finalizing variant calls: syn3-tumor, vardict
+[2022-05-22T11:24Z] Calculating variation effects for syn3-tumor, vardict
+[2022-05-22T11:24Z] Annotate VCF file: syn3-tumor, vardict
+[2022-05-22T11:24Z] Filtering for syn3-tumor, vardict
+[2022-05-22T11:24Z] Prioritization for syn3-tumor, vardict
+[2022-05-22T11:24Z] multiprocessing: split_variants_by_sample
+[2022-05-22T11:24Z] Timing: prepped BAM merging
+[2022-05-22T11:24Z] Timing: validation
+[2022-05-22T11:24Z] multiprocessing: compare_to_rm
+[2022-05-22T11:24Z] Timing: ensemble calling
+[2022-05-22T11:24Z] Timing: validation summary
+[2022-05-22T11:24Z] Timing: structural variation
+[2022-05-22T11:24Z] Timing: structural variation
+[2022-05-22T11:24Z] Timing: structural variation ensemble
+[2022-05-22T11:24Z] Timing: structural variation validation
+[2022-05-22T11:24Z] multiprocessing: validate_sv
+[2022-05-22T11:24Z] Timing: heterogeneity
+[2022-05-22T11:24Z] Timing: population database
+[2022-05-22T11:24Z] multiprocessing: prep_gemini_db
+[2022-05-22T11:24Z] Not running gemini, no samples with variants found: syn3-tumor
+[2022-05-22T11:24Z] Not running gemini, not configured in tools_on: syn3-tumor
+[2022-05-22T11:24Z] Timing: create CNV PON
+[2022-05-22T11:24Z] Timing: peddy check
+[2022-05-22T11:24Z] multiprocessing: run_peddy
+[2022-05-22T11:24Z] Timing: quality control
+[2022-05-22T11:24Z] multiprocessing: pipeline_summary
+[2022-05-22T11:24Z] QC: syn3-tumor contamination
+[2022-05-22T11:24Z] QC: syn3-tumor coverage
+[2022-05-22T11:24Z] QC: syn3-tumor fastqc
+[2022-05-22T11:24Z] Produced HTML report /pipeline/scripts/qc/syn3-tumor/fastqc/fastqc_report.html
+[2022-05-22T11:24Z] QC: syn3-tumor peddy
+[2022-05-22T11:24Z] QC: syn3-tumor picard
+[2022-05-22T11:24Z] QC: syn3-tumor qsignature
+[2022-05-22T11:24Z] QC: syn3-tumor samtools
+[2022-05-22T11:24Z] QC: syn3-tumor variants
+[2022-05-22T11:24Z] QC: syn3-tumor viral
+[2022-05-22T11:24Z] Uncaught exception occurred
+Traceback (most recent call last):
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 26, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 106, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+subprocess.CalledProcessError: Command 'set -o pipefail; /usr/local/share/bcbio/anaconda/bin/samtools view -u -f 4 /pipeline/scripts/bamclean/syn3-tumor/syn3-tumor-reorder-fixrgs-gatkfilter.bam | /usr/local/share/bcbio/anaconda/bin/bamtofastq collate=0 | bwa mem -t 4 /usr/local/share/bcbio/genomes/Hsapiens/hg19/viral/gdc-viral.fa - | /usr/local/share/bcbio/anaconda/bin/bamsort tmpfile=/pipeline/scripts/bcbiotx/tmpir661bzv/syn3-tumor-gdc-viral-tmp inputthreads=4 outputthreads=4 inputformat=sam index=1 indexfilename=/pipeline/scripts/bcbiotx/tmpir661bzv/syn3-tumor-gdc-viral-tmpbam.bai O=/pipeline/scripts/bcbiotx/tmpir661bzv/syn3-tumor-gdc-viral-tmpbam.bam &&/usr/local/share/bcbio/anaconda/bin/samtools view -bh /pipeline/scripts/bcbiotx/tmpir661bzv/syn3-tumor-gdc-viral-tmpbam.bam > /pipeline/scripts/bcbiotx/tmpir661bzv/syn3-tumor-gdc-viral.bam && /usr/local/share/bcbio/anaconda/bin/samtools index /pipeline/scripts/bcbiotx/tmpir661bzv/syn3-tumor-gdc-viral.bam
+[E::bwa_idx_load_from_disk] fail to locate the index files
+/usr/local/share/bcbio/anaconda/bin/bamsort: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+/usr/local/share/bcbio/anaconda/bin/bamtofastq: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+' returned non-zero exit status 127.
+[2022-05-22T11:30Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T11:30Z] Locale set to C.UTF-8.
+[2022-05-22T11:30Z] Timing: organize samples
+[2022-05-22T11:30Z] multiprocessing: organize_samples
+[2022-05-22T11:30Z] Using input YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:30Z] Checking sample YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:30Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:30Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:30Z] Testing minimum versions of installed programs
+[2022-05-22T11:30Z] Timing: alignment preparation
+[2022-05-22T11:30Z] multiprocessing: prep_align_inputs
+[2022-05-22T11:30Z] multiprocessing: disambiguate_split
+[2022-05-22T11:30Z] Timing: alignment
+[2022-05-22T11:30Z] multiprocessing: process_alignment
+[2022-05-22T11:30Z] Timing: callable regions
+[2022-05-22T11:30Z] multiprocessing: prep_samples
+[2022-05-22T11:30Z] multiprocessing: postprocess_alignment
+[2022-05-22T11:30Z] syn3-normal: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.6% offtarget coverage
+[2022-05-22T11:30Z] syn3-tumor: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.5% offtarget coverage
+[2022-05-22T11:30Z] multiprocessing: combine_sample_regions
+[2022-05-22T11:30Z] Identified 8 parallel analysis blocks
+Block sizes:
+  min: 22212890
+  5%: 23855718.95
+  25%: 28539669.5
+  median: 36443154.0
+  75%: 51467581.0
+  95%: 99061025.69999999
+  99%: 106291190.74
+  max: 108098732
+Between block sizes:
+  min: 1097
+  5%: 1195.85
+  25%: 1591.25
+  median: 2098.0
+  75%: 3749.75
+  95%: 6893.149999999998
+  99%: 7521.829999999999
+  max: 7679
+
+[2022-05-22T11:30Z] multiprocessing: calculate_sv_bins
+[2022-05-22T11:30Z] multiprocessing: calculate_sv_coverage
+[2022-05-22T11:30Z] multiprocessing: normalize_sv_coverage
+[2022-05-22T11:30Z] Timing: hla typing
+[2022-05-22T11:30Z] Timing: alignment post-processing
+[2022-05-22T11:30Z] multiprocessing: piped_bamprep
+[2022-05-22T11:30Z] Timing: variant calling
+[2022-05-22T11:30Z] multiprocessing: variantcall_sample
+[2022-05-22T11:30Z] multiprocessing: concat_variant_files
+[2022-05-22T11:30Z] Timing: joint squaring off/backfilling
+[2022-05-22T11:30Z] Timing: variant post-processing
+[2022-05-22T11:30Z] multiprocessing: postprocess_variants
+[2022-05-22T11:30Z] Finalizing variant calls: syn3-tumor, mutect2
+[2022-05-22T11:30Z] Calculating variation effects for syn3-tumor, mutect2
+[2022-05-22T11:30Z] Annotate VCF file: syn3-tumor, mutect2
+[2022-05-22T11:30Z] Filtering for syn3-tumor, mutect2
+[2022-05-22T11:30Z] Prioritization for syn3-tumor, mutect2
+[2022-05-22T11:30Z] Finalizing variant calls: syn3-tumor, vardict
+[2022-05-22T11:30Z] Calculating variation effects for syn3-tumor, vardict
+[2022-05-22T11:30Z] Annotate VCF file: syn3-tumor, vardict
+[2022-05-22T11:30Z] Filtering for syn3-tumor, vardict
+[2022-05-22T11:30Z] Prioritization for syn3-tumor, vardict
+[2022-05-22T11:30Z] multiprocessing: split_variants_by_sample
+[2022-05-22T11:30Z] Timing: prepped BAM merging
+[2022-05-22T11:30Z] Timing: validation
+[2022-05-22T11:30Z] multiprocessing: compare_to_rm
+[2022-05-22T11:30Z] Timing: ensemble calling
+[2022-05-22T11:30Z] Timing: validation summary
+[2022-05-22T11:30Z] Timing: structural variation
+[2022-05-22T11:30Z] Timing: structural variation
+[2022-05-22T11:30Z] Timing: structural variation ensemble
+[2022-05-22T11:30Z] Timing: structural variation validation
+[2022-05-22T11:30Z] multiprocessing: validate_sv
+[2022-05-22T11:30Z] Timing: heterogeneity
+[2022-05-22T11:30Z] Timing: population database
+[2022-05-22T11:30Z] multiprocessing: prep_gemini_db
+[2022-05-22T11:30Z] Not running gemini, no samples with variants found: syn3-tumor
+[2022-05-22T11:30Z] Not running gemini, not configured in tools_on: syn3-tumor
+[2022-05-22T11:30Z] Timing: create CNV PON
+[2022-05-22T11:30Z] Timing: peddy check
+[2022-05-22T11:30Z] multiprocessing: run_peddy
+[2022-05-22T11:30Z] Timing: quality control
+[2022-05-22T11:30Z] multiprocessing: pipeline_summary
+[2022-05-22T11:30Z] QC: syn3-tumor contamination
+[2022-05-22T11:30Z] QC: syn3-tumor coverage
+[2022-05-22T11:30Z] QC: syn3-tumor fastqc
+[2022-05-22T11:30Z] Produced HTML report /pipeline/scripts/qc/syn3-tumor/fastqc/fastqc_report.html
+[2022-05-22T11:30Z] QC: syn3-tumor peddy
+[2022-05-22T11:30Z] QC: syn3-tumor picard
+[2022-05-22T11:30Z] QC: syn3-tumor qsignature
+[2022-05-22T11:30Z] QC: syn3-tumor samtools
+[2022-05-22T11:30Z] QC: syn3-tumor variants
+[2022-05-22T11:30Z] QC: syn3-tumor viral
+[2022-05-22T11:30Z] Uncaught exception occurred
+Traceback (most recent call last):
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 26, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 106, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+subprocess.CalledProcessError: Command 'set -o pipefail; /usr/local/share/bcbio/anaconda/bin/samtools view -u -f 4 /pipeline/scripts/bamclean/syn3-tumor/syn3-tumor-reorder-fixrgs-gatkfilter.bam | /usr/local/share/bcbio/anaconda/bin/bamtofastq collate=0 | bwa mem -t 4 /usr/local/share/bcbio/genomes/Hsapiens/hg19/viral/gdc-viral.fa - | /usr/local/share/bcbio/anaconda/bin/bamsort tmpfile=/pipeline/scripts/bcbiotx/tmpenmszngr/syn3-tumor-gdc-viral-tmp inputthreads=4 outputthreads=4 inputformat=sam index=1 indexfilename=/pipeline/scripts/bcbiotx/tmpenmszngr/syn3-tumor-gdc-viral-tmpbam.bai O=/pipeline/scripts/bcbiotx/tmpenmszngr/syn3-tumor-gdc-viral-tmpbam.bam &&/usr/local/share/bcbio/anaconda/bin/samtools view -bh /pipeline/scripts/bcbiotx/tmpenmszngr/syn3-tumor-gdc-viral-tmpbam.bam > /pipeline/scripts/bcbiotx/tmpenmszngr/syn3-tumor-gdc-viral.bam && /usr/local/share/bcbio/anaconda/bin/samtools index /pipeline/scripts/bcbiotx/tmpenmszngr/syn3-tumor-gdc-viral.bam
+[E::bwa_idx_load_from_disk] fail to locate the index files
+/usr/local/share/bcbio/anaconda/bin/bamtofastq: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+/usr/local/share/bcbio/anaconda/bin/bamsort: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+' returned non-zero exit status 127.
+[2022-05-22T11:31Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T11:31Z] Locale set to C.UTF-8.
+[2022-05-22T11:32Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T11:32Z] Locale set to C.UTF-8.
+[2022-05-22T11:33Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T11:33Z] Locale set to C.UTF-8.
+[2022-05-22T11:36Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T11:36Z] Locale set to C.UTF-8.
+[2022-05-22T11:36Z] Timing: organize samples
+[2022-05-22T11:36Z] multiprocessing: organize_samples
+[2022-05-22T11:36Z] Using input YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:36Z] Checking sample YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:36Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:36Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:36Z] Testing minimum versions of installed programs
+[2022-05-22T11:36Z] Timing: alignment preparation
+[2022-05-22T11:36Z] multiprocessing: prep_align_inputs
+[2022-05-22T11:36Z] multiprocessing: disambiguate_split
+[2022-05-22T11:36Z] Timing: alignment
+[2022-05-22T11:36Z] multiprocessing: process_alignment
+[2022-05-22T11:36Z] Timing: callable regions
+[2022-05-22T11:36Z] multiprocessing: prep_samples
+[2022-05-22T11:36Z] multiprocessing: postprocess_alignment
+[2022-05-22T11:36Z] syn3-normal: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.6% offtarget coverage
+[2022-05-22T11:36Z] syn3-tumor: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.5% offtarget coverage
+[2022-05-22T11:36Z] multiprocessing: combine_sample_regions
+[2022-05-22T11:36Z] Identified 8 parallel analysis blocks
+Block sizes:
+  min: 22212890
+  5%: 23855718.95
+  25%: 28539669.5
+  median: 36443154.0
+  75%: 51467581.0
+  95%: 99061025.69999999
+  99%: 106291190.74
+  max: 108098732
+Between block sizes:
+  min: 1097
+  5%: 1195.85
+  25%: 1591.25
+  median: 2098.0
+  75%: 3749.75
+  95%: 6893.149999999998
+  99%: 7521.829999999999
+  max: 7679
+
+[2022-05-22T11:36Z] multiprocessing: calculate_sv_bins
+[2022-05-22T11:36Z] multiprocessing: calculate_sv_coverage
+[2022-05-22T11:36Z] multiprocessing: normalize_sv_coverage
+[2022-05-22T11:36Z] Timing: hla typing
+[2022-05-22T11:36Z] Timing: alignment post-processing
+[2022-05-22T11:36Z] multiprocessing: piped_bamprep
+[2022-05-22T11:36Z] Timing: variant calling
+[2022-05-22T11:36Z] multiprocessing: variantcall_sample
+[2022-05-22T11:36Z] multiprocessing: concat_variant_files
+[2022-05-22T11:36Z] Timing: joint squaring off/backfilling
+[2022-05-22T11:36Z] Timing: variant post-processing
+[2022-05-22T11:36Z] multiprocessing: postprocess_variants
+[2022-05-22T11:36Z] Finalizing variant calls: syn3-tumor, mutect2
+[2022-05-22T11:36Z] Calculating variation effects for syn3-tumor, mutect2
+[2022-05-22T11:36Z] Annotate VCF file: syn3-tumor, mutect2
+[2022-05-22T11:36Z] Filtering for syn3-tumor, mutect2
+[2022-05-22T11:36Z] Prioritization for syn3-tumor, mutect2
+[2022-05-22T11:36Z] Finalizing variant calls: syn3-tumor, vardict
+[2022-05-22T11:36Z] Calculating variation effects for syn3-tumor, vardict
+[2022-05-22T11:36Z] Annotate VCF file: syn3-tumor, vardict
+[2022-05-22T11:36Z] Filtering for syn3-tumor, vardict
+[2022-05-22T11:36Z] Prioritization for syn3-tumor, vardict
+[2022-05-22T11:36Z] multiprocessing: split_variants_by_sample
+[2022-05-22T11:36Z] Timing: prepped BAM merging
+[2022-05-22T11:36Z] Timing: validation
+[2022-05-22T11:36Z] multiprocessing: compare_to_rm
+[2022-05-22T11:36Z] Timing: ensemble calling
+[2022-05-22T11:36Z] Timing: validation summary
+[2022-05-22T11:36Z] Timing: structural variation
+[2022-05-22T11:36Z] Timing: structural variation
+[2022-05-22T11:36Z] Timing: structural variation ensemble
+[2022-05-22T11:36Z] Timing: structural variation validation
+[2022-05-22T11:36Z] multiprocessing: validate_sv
+[2022-05-22T11:36Z] Timing: heterogeneity
+[2022-05-22T11:36Z] Timing: population database
+[2022-05-22T11:36Z] multiprocessing: prep_gemini_db
+[2022-05-22T11:36Z] Not running gemini, no samples with variants found: syn3-tumor
+[2022-05-22T11:36Z] Not running gemini, not configured in tools_on: syn3-tumor
+[2022-05-22T11:36Z] Timing: create CNV PON
+[2022-05-22T11:36Z] Timing: peddy check
+[2022-05-22T11:36Z] multiprocessing: run_peddy
+[2022-05-22T11:36Z] Timing: quality control
+[2022-05-22T11:36Z] multiprocessing: pipeline_summary
+[2022-05-22T11:36Z] QC: syn3-tumor contamination
+[2022-05-22T11:36Z] QC: syn3-tumor coverage
+[2022-05-22T11:36Z] QC: syn3-tumor fastqc
+[2022-05-22T11:36Z] Produced HTML report /pipeline/scripts/qc/syn3-tumor/fastqc/fastqc_report.html
+[2022-05-22T11:36Z] QC: syn3-tumor peddy
+[2022-05-22T11:36Z] QC: syn3-tumor picard
+[2022-05-22T11:36Z] QC: syn3-tumor qsignature
+[2022-05-22T11:36Z] QC: syn3-tumor samtools
+[2022-05-22T11:36Z] QC: syn3-tumor variants
+[2022-05-22T11:36Z] QC: syn3-tumor viral
+[2022-05-22T11:36Z] Uncaught exception occurred
+Traceback (most recent call last):
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 26, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 106, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+subprocess.CalledProcessError: Command 'set -o pipefail; /usr/local/share/bcbio/anaconda/bin/samtools view -u -f 4 /pipeline/scripts/bamclean/syn3-tumor/syn3-tumor-reorder-fixrgs-gatkfilter.bam | /usr/local/share/bcbio/anaconda/bin/bamtofastq collate=0 | bwa mem -t 4 /usr/local/share/bcbio/genomes/Hsapiens/hg19/viral/gdc-viral.fa - | /usr/local/share/bcbio/anaconda/bin/bamsort tmpfile=/pipeline/scripts/bcbiotx/tmp6vxraavh/syn3-tumor-gdc-viral-tmp inputthreads=4 outputthreads=4 inputformat=sam index=1 indexfilename=/pipeline/scripts/bcbiotx/tmp6vxraavh/syn3-tumor-gdc-viral-tmpbam.bai O=/pipeline/scripts/bcbiotx/tmp6vxraavh/syn3-tumor-gdc-viral-tmpbam.bam &&/usr/local/share/bcbio/anaconda/bin/samtools view -bh /pipeline/scripts/bcbiotx/tmp6vxraavh/syn3-tumor-gdc-viral-tmpbam.bam > /pipeline/scripts/bcbiotx/tmp6vxraavh/syn3-tumor-gdc-viral.bam && /usr/local/share/bcbio/anaconda/bin/samtools index /pipeline/scripts/bcbiotx/tmp6vxraavh/syn3-tumor-gdc-viral.bam
+[E::bwa_idx_load_from_disk] fail to locate the index files
+/usr/local/share/bcbio/anaconda/bin/bamsort: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+/usr/local/share/bcbio/anaconda/bin/bamtofastq: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+' returned non-zero exit status 127.
+[2022-05-22T11:46Z] System YAML configuration: /usr/local/share/bcbio/galaxy/bcbio_system.yaml.
+[2022-05-22T11:46Z] Locale set to C.UTF-8.
+[2022-05-22T11:46Z] Timing: organize samples
+[2022-05-22T11:46Z] multiprocessing: organize_samples
+[2022-05-22T11:46Z] Using input YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:46Z] Checking sample YAML configuration: /home/immichail/VYakushina/smurf/cancer-dream-syn3.yaml
+[2022-05-22T11:46Z] Retreiving program versions from /usr/local/share/bcbio/manifest/python-packages.yaml.
+[2022-05-22T11:46Z] Retreiving program versions from /usr/local/share/bcbio/manifest/r-packages.yaml.
+[2022-05-22T11:46Z] Testing minimum versions of installed programs
+[2022-05-22T11:46Z] Timing: alignment preparation
+[2022-05-22T11:46Z] multiprocessing: prep_align_inputs
+[2022-05-22T11:46Z] multiprocessing: disambiguate_split
+[2022-05-22T11:46Z] Timing: alignment
+[2022-05-22T11:46Z] multiprocessing: process_alignment
+[2022-05-22T11:46Z] Timing: callable regions
+[2022-05-22T11:46Z] multiprocessing: prep_samples
+[2022-05-22T11:46Z] multiprocessing: postprocess_alignment
+[2022-05-22T11:46Z] syn3-normal: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.6% offtarget coverage
+[2022-05-22T11:46Z] syn3-tumor: Assigned coverage as 'amplicon' with 0.0% genome coverage and -0.5% offtarget coverage
+[2022-05-22T11:46Z] multiprocessing: combine_sample_regions
+[2022-05-22T11:46Z] Identified 8 parallel analysis blocks
+Block sizes:
+  min: 22212890
+  5%: 23855718.95
+  25%: 28539669.5
+  median: 36443154.0
+  75%: 51467581.0
+  95%: 99061025.69999999
+  99%: 106291190.74
+  max: 108098732
+Between block sizes:
+  min: 1097
+  5%: 1195.85
+  25%: 1591.25
+  median: 2098.0
+  75%: 3749.75
+  95%: 6893.149999999998
+  99%: 7521.829999999999
+  max: 7679
+
+[2022-05-22T11:46Z] multiprocessing: calculate_sv_bins
+[2022-05-22T11:46Z] multiprocessing: calculate_sv_coverage
+[2022-05-22T11:46Z] multiprocessing: normalize_sv_coverage
+[2022-05-22T11:46Z] Timing: hla typing
+[2022-05-22T11:46Z] Timing: alignment post-processing
+[2022-05-22T11:46Z] multiprocessing: piped_bamprep
+[2022-05-22T11:46Z] Timing: variant calling
+[2022-05-22T11:46Z] multiprocessing: variantcall_sample
+[2022-05-22T11:46Z] multiprocessing: concat_variant_files
+[2022-05-22T11:46Z] Timing: joint squaring off/backfilling
+[2022-05-22T11:46Z] Timing: variant post-processing
+[2022-05-22T11:46Z] multiprocessing: postprocess_variants
+[2022-05-22T11:46Z] Finalizing variant calls: syn3-tumor, mutect2
+[2022-05-22T11:46Z] Calculating variation effects for syn3-tumor, mutect2
+[2022-05-22T11:46Z] Annotate VCF file: syn3-tumor, mutect2
+[2022-05-22T11:46Z] Filtering for syn3-tumor, mutect2
+[2022-05-22T11:46Z] Prioritization for syn3-tumor, mutect2
+[2022-05-22T11:46Z] Finalizing variant calls: syn3-tumor, vardict
+[2022-05-22T11:46Z] Calculating variation effects for syn3-tumor, vardict
+[2022-05-22T11:46Z] Annotate VCF file: syn3-tumor, vardict
+[2022-05-22T11:46Z] Filtering for syn3-tumor, vardict
+[2022-05-22T11:46Z] Prioritization for syn3-tumor, vardict
+[2022-05-22T11:46Z] multiprocessing: split_variants_by_sample
+[2022-05-22T11:46Z] Timing: prepped BAM merging
+[2022-05-22T11:46Z] Timing: validation
+[2022-05-22T11:46Z] multiprocessing: compare_to_rm
+[2022-05-22T11:46Z] Timing: ensemble calling
+[2022-05-22T11:46Z] Timing: validation summary
+[2022-05-22T11:46Z] Timing: structural variation
+[2022-05-22T11:46Z] Timing: structural variation
+[2022-05-22T11:46Z] Timing: structural variation ensemble
+[2022-05-22T11:46Z] Timing: structural variation validation
+[2022-05-22T11:46Z] multiprocessing: validate_sv
+[2022-05-22T11:46Z] Timing: heterogeneity
+[2022-05-22T11:46Z] Timing: population database
+[2022-05-22T11:46Z] multiprocessing: prep_gemini_db
+[2022-05-22T11:46Z] Not running gemini, no samples with variants found: syn3-tumor
+[2022-05-22T11:46Z] Not running gemini, not configured in tools_on: syn3-tumor
+[2022-05-22T11:46Z] Timing: create CNV PON
+[2022-05-22T11:46Z] Timing: peddy check
+[2022-05-22T11:46Z] multiprocessing: run_peddy
+[2022-05-22T11:46Z] Timing: quality control
+[2022-05-22T11:46Z] multiprocessing: pipeline_summary
+[2022-05-22T11:46Z] QC: syn3-tumor contamination
+[2022-05-22T11:46Z] QC: syn3-tumor coverage
+[2022-05-22T11:46Z] QC: syn3-tumor fastqc
+[2022-05-22T11:46Z] Produced HTML report /pipeline/scripts/qc/syn3-tumor/fastqc/fastqc_report.html
+[2022-05-22T11:46Z] QC: syn3-tumor peddy
+[2022-05-22T11:46Z] QC: syn3-tumor picard
+[2022-05-22T11:46Z] QC: syn3-tumor qsignature
+[2022-05-22T11:46Z] QC: syn3-tumor samtools
+[2022-05-22T11:46Z] QC: syn3-tumor variants
+[2022-05-22T11:46Z] QC: syn3-tumor viral
+[2022-05-22T11:46Z] Uncaught exception occurred
+Traceback (most recent call last):
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 26, in run
+    _do_run(cmd, checks, log_stdout, env=env)
+  File "/usr/local/share/bcbio/anaconda/lib/python3.7/site-packages/bcbio/provenance/do.py", line 106, in _do_run
+    raise subprocess.CalledProcessError(exitcode, error_msg)
+subprocess.CalledProcessError: Command 'set -o pipefail; /usr/local/share/bcbio/anaconda/bin/samtools view -u -f 4 /pipeline/scripts/bamclean/syn3-tumor/syn3-tumor-reorder-fixrgs-gatkfilter.bam | /usr/local/share/bcbio/anaconda/bin/bamtofastq collate=0 | bwa mem -t 4 /usr/local/share/bcbio/genomes/Hsapiens/hg19/viral/gdc-viral.fa - | /usr/local/share/bcbio/anaconda/bin/bamsort tmpfile=/pipeline/scripts/bcbiotx/tmpt9a04y4t/syn3-tumor-gdc-viral-tmp inputthreads=4 outputthreads=4 inputformat=sam index=1 indexfilename=/pipeline/scripts/bcbiotx/tmpt9a04y4t/syn3-tumor-gdc-viral-tmpbam.bai O=/pipeline/scripts/bcbiotx/tmpt9a04y4t/syn3-tumor-gdc-viral-tmpbam.bam &&/usr/local/share/bcbio/anaconda/bin/samtools view -bh /pipeline/scripts/bcbiotx/tmpt9a04y4t/syn3-tumor-gdc-viral-tmpbam.bam > /pipeline/scripts/bcbiotx/tmpt9a04y4t/syn3-tumor-gdc-viral.bam && /usr/local/share/bcbio/anaconda/bin/samtools index /pipeline/scripts/bcbiotx/tmpt9a04y4t/syn3-tumor-gdc-viral.bam
+/usr/local/share/bcbio/anaconda/bin/bamtofastq: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+/usr/local/share/bcbio/anaconda/bin/bamsort: symbol lookup error: /usr/local/share/bcbio/anaconda/bin/../lib/libmaus2.so.2: undefined symbol: _ZTIN6snappy4SinkE
+[M::bwa_idx_load_from_disk] read 0 ALT contigs
+' returned non-zero exit status 127.

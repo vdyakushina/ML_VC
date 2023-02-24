@@ -1,0 +1,21 @@
+## htsjdk.samtools.metrics.StringHeader
+# CollectSequencingArtifactMetrics --INPUT /pipeline/scripts/bamclean/syn3-tumor/syn3-tumor-reorder-fixrgs-gatkfilter.bam --OUTPUT /pipeline/scripts/bcbiotx/tmpqi96j2ll/syn3-tumor/syn3-tumor --VALIDATION_STRINGENCY SILENT --REFERENCE_SEQUENCE /usr/local/share/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa --MINIMUM_QUALITY_SCORE 20 --MINIMUM_MAPPING_QUALITY 30 --MINIMUM_INSERT_SIZE 60 --MAXIMUM_INSERT_SIZE 600 --INCLUDE_UNPAIRED false --INCLUDE_DUPLICATES false --INCLUDE_NON_PF_READS false --TANDEM_READS false --USE_OQ true --CONTEXT_SIZE 1 --ASSUME_SORTED true --STOP_AFTER 0 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+## htsjdk.samtools.metrics.StringHeader
+# Started on: Sun May 22 14:10:51 MSK 2022
+
+## METRICS CLASS	picard.analysis.artifacts.SequencingArtifactMetrics$BaitBiasSummaryMetrics
+SAMPLE_ALIAS	LIBRARY	REF_BASE	ALT_BASE	TOTAL_QSCORE	WORST_CXT	WORST_CXT_QSCORE	WORST_PRE_CXT	WORST_PRE_CXT_QSCORE	WORST_POST_CXT	WORST_POST_CXT_QSCORE	ARTIFACT_NAME
+syn3-tumor	None	A	C	49	AAA	44	AAN	46	NAC	45	NA
+syn3-tumor	None	A	G	36	AAC	26	AAN	32	NAT	30	NA
+syn3-tumor	None	A	T	46	TAG	33	TAN	39	NAG	41	NA
+syn3-tumor	None	C	A	53	CCG	37	ACN	48	NCA	46	Cref
+syn3-tumor	None	C	G	100	GCA	30	GCN	34	NCC	48	NA
+syn3-tumor	None	C	T	53	ACG	23	CCN	37	NCA	35	NA
+syn3-tumor	None	G	A	100	CGC	19	CGN	28	NGC	33	NA
+syn3-tumor	None	G	C	37	TGT	27	TGN	33	NGT	30	NA
+syn3-tumor	None	G	T	100	CGA	41	GGN	50	NGG	62	Gref
+syn3-tumor	None	T	A	100	GTC	40	ATN	49	NTT	48	NA
+syn3-tumor	None	T	C	100	CTA	28	CTN	34	NTC	37	NA
+syn3-tumor	None	T	G	100	TTG	46	ATN	100	NTG	50	NA
+
+

@@ -1,0 +1,5 @@
+{"flags":["not duplicate","not failed_quality_control","not mate_is_unmapped","not secondary_alignment","not unmapped"],"region":"","sample":"syn3-normal"}	426218
+{"flags":["not duplicate","not failed_quality_control","not mate_is_unmapped","not secondary_alignment","not unmapped"],"region":"cleaned-AODABCV1.designed-merged.bed","sample":"syn3-normal"}	428567
+{"flags":["not duplicate","not failed_quality_control","not mate_is_unmapped","not secondary_alignment","not unmapped"],"region":"","sample":"syn3-tumor"}	247100
+{"flags":["not duplicate","not failed_quality_control","not mate_is_unmapped","not secondary_alignment","not unmapped"],"region":"cleaned-AODABCV1.designed-merged.bed","sample":"syn3-tumor"}	248373
+{"flags":["not duplicate","not failed_quality_control","not mate_is_unmapped","not secondary_alignment","not unmapped"],"region":"cleaned-AODABCV1.designed-merged-padded.bed","sample":"syn3-tumor"}	247100

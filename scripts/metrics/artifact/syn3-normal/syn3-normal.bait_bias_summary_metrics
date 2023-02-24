@@ -1,0 +1,21 @@
+## htsjdk.samtools.metrics.StringHeader
+# CollectSequencingArtifactMetrics --INPUT /pipeline/scripts/bamclean/syn3-normal/syn3-normal-reorder-fixrgs-gatkfilter.bam --OUTPUT /pipeline/scripts/bcbiotx/tmpev7cjt35/syn3-normal/syn3-normal --VALIDATION_STRINGENCY SILENT --REFERENCE_SEQUENCE /usr/local/share/bcbio/genomes/Hsapiens/hg19/seq/hg19.fa --MINIMUM_QUALITY_SCORE 20 --MINIMUM_MAPPING_QUALITY 30 --MINIMUM_INSERT_SIZE 60 --MAXIMUM_INSERT_SIZE 600 --INCLUDE_UNPAIRED false --INCLUDE_DUPLICATES false --INCLUDE_NON_PF_READS false --TANDEM_READS false --USE_OQ true --CONTEXT_SIZE 1 --ASSUME_SORTED true --STOP_AFTER 0 --VERBOSITY INFO --QUIET false --COMPRESSION_LEVEL 5 --MAX_RECORDS_IN_RAM 500000 --CREATE_INDEX false --CREATE_MD5_FILE false --GA4GH_CLIENT_SECRETS client_secrets.json --help false --version false --showHidden false --USE_JDK_DEFLATER false --USE_JDK_INFLATER false
+## htsjdk.samtools.metrics.StringHeader
+# Started on: Sun May 22 14:10:15 MSK 2022
+
+## METRICS CLASS	picard.analysis.artifacts.SequencingArtifactMetrics$BaitBiasSummaryMetrics
+SAMPLE_ALIAS	LIBRARY	REF_BASE	ALT_BASE	TOTAL_QSCORE	WORST_CXT	WORST_CXT_QSCORE	WORST_PRE_CXT	WORST_PRE_CXT_QSCORE	WORST_POST_CXT	WORST_POST_CXT_QSCORE	ARTIFACT_NAME
+syn3-normal	None	A	C	48	AAA	41	AAN	43	NAG	45	NA
+syn3-normal	None	A	G	42	AAT	29	AAN	34	NAT	32	NA
+syn3-normal	None	A	T	45	TAG	36	TAN	40	NAG	43	NA
+syn3-normal	None	C	A	51	CCG	37	GCN	43	NCC	46	Cref
+syn3-normal	None	C	G	100	GCA	33	GCN	37	NCT	56	NA
+syn3-normal	None	C	T	53	ACG	21	ACN	33	NCA	39	NA
+syn3-normal	None	G	A	100	CGC	20	CGN	31	NGC	32	NA
+syn3-normal	None	G	C	38	TGT	28	TGN	34	NGT	31	NA
+syn3-normal	None	G	T	100	CGC	37	AGN	100	NGA	47	Gref
+syn3-normal	None	T	A	100	GTG	43	ATN	100	NTA	100	NA
+syn3-normal	None	T	C	100	GTA	27	GTN	35	NTC	36	NA
+syn3-normal	None	T	G	100	GTG	46	ATN	51	NTG	47	NA
+
+
